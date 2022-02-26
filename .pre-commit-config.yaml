@@ -15,11 +15,11 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
 -   repo: https://gitlab.com/pycqa/flake8
-    rev: 21d3c70d676007470908d39b73f0521d39b3b997
+    rev: 3.9.2
     hooks:
     -   id: flake8
 -   repo: https://github.com/psf/black
-    rev: 9b161072c13c0ec32c9ca9bd48fad17f781a56d4
+    rev: 22.1.0
     hooks:
     -   id: black
         language_version: python3

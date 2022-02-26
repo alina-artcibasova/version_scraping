@@ -1,0 +1,25 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+# Creating sample config file:
+# pre-commit sample-config > .pre-commit-config.yaml
+# Installing new hooks:
+# pre-commit install
+# Updating:
+# pre-commit autoupdate
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 21d3c70d676007470908d39b73f0521d39b3b997
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/psf/black
+    rev: 9b161072c13c0ec32c9ca9bd48fad17f781a56d4
+    hooks:
+    -   id: black
+        language_version: python3
